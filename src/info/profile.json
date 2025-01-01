@@ -1,0 +1,66 @@
+{
+    "picture": "david.png",
+    "name": "David Bernardes Junior",
+    "specialty": "Analytics Engineer | Data Scientist | Data Engineer",
+    "about": "Sou um desbravador de dados e apaixonado por transformar caos em insights. Com experiência em análise de dados, engenharia de dados, e visualização (porque gráficos bonitos também contam história, né?), ajudo organizações a tomar decisões baseadas em números.\n\nCurioso por natureza, estou sempre buscando aprender algo novo, seja uma nova técnica de modelagem ou como melhorar um pipeline de dados.\n\nVamos conversar e descobrir como posso contribuir para o sucesso do seu projeto, traduzindo complexidade em estratégias eficientes e soluções claras.",
+    "tools": [
+        "Python",
+        "Airflow",
+        "SQL",
+        "DBT",
+        "Duckdb",
+        "Oracle",
+        "MySQL",
+        "Postgres",
+        "SQLServer",
+        "OPC",
+        "Docker",
+        "Flask",
+        "Pandas",
+        "GBQ",
+        "Redshift",
+        "Databricks",
+        "Dremio"
+    ],
+    "skills": [
+        {
+            "title": "WebScrapping",
+            "description": "Raspagem de dados em páginas web."
+        },
+        {
+            "title": "ETL/ELT",
+            "description": "Experiência com extração transformação e carga de dados."
+        },
+        {
+            "title": "Análise de Dados",
+            "description": "Exploração, análise de tendência, levantamento de insigths."
+        },
+        {
+            "title": "Exibição de Dados",
+            "description": "Dashboards interativos com interfaces amigáveis."
+        },
+        {
+            "title": "Arquitetura de Dados",
+            "description": "Elaboração completa de solução de dados."
+        },
+        {
+            "title": "Integração de Sistemas",
+            "description": "Projetos de interface para interação entre sistemas."
+        }
+    ],
+    "projects": [
+        {
+            "title": "",
+            "description": ""
+        },
+        {
+            "title": "",
+            "description": ""
+        }
+    ],
+    "social": {
+        "github": "https://github.com/davidbernardes",
+        "linkedin": "https://www.linkedin.com/in/davidbernardesjr",
+        "email": ""
+    }
+}
