@@ -10,9 +10,7 @@
     :show_title=false
     />
     <SocialMidia
-        :github="profile.social.github"
-        :linkedin="profile.social.linkedin"
-        :email="profile.social.email"
+        :social_links="profile.social"
     />
     <ServicesHome
     :skills="profile.skills"
@@ -23,9 +21,7 @@
     <ToolsHome
       :tools="profile.tools"
     />
-    <FooTer
-      :social="profile.social"
-    />
+    <FooTer/>
 </div>
 </template>
 

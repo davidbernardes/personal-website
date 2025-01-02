@@ -51,16 +51,23 @@
     "projects": [
         {
             "title": "Tempos Operacionais de Colheita",
-            "description": ""
+            "description": "Na agricultura de precisão, os equipamentos geram dados constantemente, como informações de geolocalização, temperatura, operação, entre outros. Durante a colheita de cana-de-açúcar, esses dados são cruciais para produzir informações que possibilitam uma logística de despacho de caminhões mais eficiente e precisa.Neste projeto, extraí os dados coletados pelos computadores de bordo e os armazenei em um banco de dados. Após realizar uma série de análises, desenvolvi e implementei um pipeline de dados e um algoritmo capaz de calcular os tempos gastos por cada equipamento nas diferentes operações de colheita. Com essas informações, é possível estimar a vazão de toneladas de cana por hora, otimizando o processo de despacho de caminhões.",
+            "technologies": ["Python","Airflow", "Pandas", "Oracle", "GeoPandas"]
         },
         {
-            "title": "",
-            "description": ""
+            "title": "Coleta de Dados Insdustrais",
+            "description": "A volumetria de dados gerados por uma planta industrial é imensa, especialmente com a chegada da Indústria 4.0. Sensores, motores, alarmes e PLCs geram informações a cada segundo. Neste projeto, o principal desafio foi a coleta desses dados por meio do protocolo OPC. O pipeline de processamento começa com um script em Python para capturar os valores, com base em uma lista de tags (variáveis ou valores coletados). Esses dados são então armazenados em um banco de dados. A partir daí, iniciam-se as análises e a geração de indicadores de produção, eficiência e integração com outros sistemas.",
+            "technologies": ["Python", "OPC DA", "Oracle"]
         }
     ],
-    "social": {
-        "github": "https://github.com/davidbernardes",
-        "linkedin": "https://www.linkedin.com/in/davidbernardesjr",
-        "email": ""
-    }
+    "social": [
+        {   
+            "icon":"fa-github",
+            "link": "https://github.com/davidbernardes"
+        },
+        {
+            "icon":"fa-linkedin",
+            "link": "https://www.linkedin.com/in/davidbernardesjr"
+        }
+    ]
 }

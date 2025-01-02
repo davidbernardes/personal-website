@@ -8,8 +8,16 @@
             <div class="grid">
 
                 <div v-for="project in projects" v-bind:key="project">
-                    <h6>Projeto</h6>
-                    <p>Descriçaõ do projeto</p>
+                    <h6>{{project.title}}</h6>
+                    <p>{{project.description}}</p>
+                    <div style="text-align: end;">
+                        <span v-for="tec in project.technologies" v-bind:key="tec">
+                            <mark class="small_text" >
+                                {{tec}}
+                            </mark>&nbsp;
+                        </span>
+                    
+                    </div>
                     <hr>
                 </div>
             </div>
@@ -42,5 +50,9 @@ hgroup::after{
     margin-top: 1rem;
     border-bottom: .125rem solid var(--primary);
     content: "";
+}
+.small_text{
+    font-size: small;
+    text-align: end;
 }
 </style>

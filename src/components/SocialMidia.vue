@@ -2,17 +2,12 @@
     <nav data-theme="light">
         <ul></ul>
         <ul>
-        <a target="_blank" rel="noopener noreferrer" :href="github" aria-label="davidbernardes">
-            <i class="fab fa-github  fa-2x socialicons"></i>
-        </a>
-        <li>|</li>
-        <a target="_blank" rel="noopener noreferrer" :href="linkedin" aria-label="My linkedin">
-            <i class="fab fa-linkedin  fa-2x socialicons"></i>
-        </a>
-        <li>|</li>
-        <a target="_blank" rel="noopener noreferrer" :href="email" aria-label="My linkedin">
-            <i class="fas fa-envelope-square fa-2x"></i>
-        </a>
+            <span v-for=" item in social_links" v-bind:key="item">
+            <a target="_blank" rel="noopener noreferrer" :href="item.link">
+                <i class="fab fa-2x socialicons" :class="item.icon"></i>
+            </a>
+            <li>&nbsp;</li>
+            </span>
         </ul>
         <ul></ul>
     </nav>    
@@ -24,9 +19,8 @@
 export default {
     name:"SocialMidia",
     props:{
-        github:{type:String, default:""},
-        linkedin:{type:String, default:""},
-        email:{type:String, default:""}
+        social_links:Array
+        
     }
 }
 </script>
