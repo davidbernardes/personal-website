@@ -52,12 +52,17 @@
         {
             "title": "Tempos Operacionais de Colheita",
             "description": "Na agricultura de precisão, os equipamentos geram dados constantemente, como informações de geolocalização, temperatura, operação, entre outros. Durante a colheita de cana-de-açúcar, esses dados são cruciais para produzir informações que possibilitam uma logística de despacho de caminhões mais eficiente e precisa.Neste projeto, extraí os dados coletados pelos computadores de bordo e os armazenei em um banco de dados. Após realizar uma série de análises, desenvolvi e implementei um pipeline de dados e um algoritmo capaz de calcular os tempos gastos por cada equipamento nas diferentes operações de colheita. Com essas informações, é possível estimar a vazão de toneladas de cana por hora, otimizando o processo de despacho de caminhões.",
-            "technologies": ["Python","Airflow", "Pandas", "Oracle", "GeoPandas"]
+            "technologies": ["Python", "SQL","Airflow", "Pandas", "Oracle", "GeoPandas"]
         },
         {
             "title": "Coleta de Dados Insdustrais",
             "description": "A volumetria de dados gerados por uma planta industrial é imensa, especialmente com a chegada da Indústria 4.0. Sensores, motores, alarmes e PLCs geram informações a cada segundo. Neste projeto, o principal desafio foi a coleta desses dados por meio do protocolo OPC. O pipeline de processamento começa com um script em Python para capturar os valores, com base em uma lista de tags (variáveis ou valores coletados). Esses dados são então armazenados em um banco de dados. A partir daí, iniciam-se as análises e a geração de indicadores de produção, eficiência e integração com outros sistemas.",
-            "technologies": ["Python", "OPC DA", "Oracle"]
+            "technologies": ["Python", "OPC DA", "Oracle", "Grafana"]
+        },
+        {
+            "title": "Gestão de Excessos de Velocidade",
+            "description": "O objetivo final deste projeto era identificar os condutores que ultrapassarem o limite de velocidade, para que os gestores pudessem orientar e agir com mais eficácia. A coleta foi o primeiro desafio já que as ocorrências de excesso vem de um API de terceiro, e as identificações com inteligência artificial de outro. Ainda adicionamos uma etapa de validação e controle de tratativa para saber quais ocorrências já foram tratadas. A coleta é feita com script python e armazenada em um banco de dados. A fila do Rabbitmq com as identificações dos condutores, também foi feita em Python e Nameko. As transformações e tratativas são realizadas em SQL e todo fluxo orquestrado pelo Airflow.  A interface web, desenvolvida com Flask, apresenta os dados processados, permitindo que os gestores possam tratar e adicionar informações conforme necessário. Como resultado, as ocorrências de excessos de velocidade superiores a 200 por semana foram reduzidas a apenas uma em um período de 3 meses.",
+            "technologies": ["Python", "SQL", "Rabbit MQ", "Oracle"]
         }
     ],
     "social": [
