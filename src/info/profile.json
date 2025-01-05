@@ -51,7 +51,6 @@
     "projects": [
         {
             "title": "Tempos Operacionais de Colheita",
-            "link":"https://github.com/davidbernardes",
             "description": "Na agricultura de precisão, os equipamentos geram dados constantemente, como informações de geolocalização, temperatura, operação, entre outros. Durante a colheita de cana-de-açúcar, esses dados são cruciais para produzir informações que possibilitam uma logística de despacho de caminhões mais eficiente e precisa.Neste projeto, extraí os dados coletados pelos computadores de bordo e os armazenei em um banco de dados. Após realizar uma série de análises, desenvolvi e implementei um pipeline de dados e um algoritmo capaz de calcular os tempos gastos por cada equipamento nas diferentes operações de colheita. Com essas informações, é possível estimar a vazão de toneladas de cana por hora, otimizando o processo de despacho de caminhões.",
             "technologies": ["Python", "SQL","Airflow", "Pandas", "Oracle", "GeoPandas"]
         },
