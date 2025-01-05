@@ -5,24 +5,25 @@
                 <h2>Projetos</h2>
                 <h3></h3>
             </hgroup>
-            <div class="grid">
 
-                <div v-for="project in projects" v-bind:key="project">
-                    <h6>{{project.title}}</h6>
-                    <p>{{project.description}}</p>
-                    <div style="text-align: end;">
-                        <span v-for="tec in project.technologies" v-bind:key="tec">
-                            <mark class="small_text" >
-                                {{tec}}
-                            </mark>&nbsp;
-                        </span>
-                    
-                    </div>
-                    <hr>
+            <details  v-for="project in projects" v-bind:key="project">
+                <summary><strong>{{project.title}}</strong></summary>
+                <div style="text-align: end;">
                 </div>
-            </div>
-
-            
+                <p>{{project.description}}</p>
+                <div style="text-align: end;">
+                    <a v-if="project.link" target="_blank" rel="noopener noreferrer" :href="project.link">
+                        <small>
+                            Detalhes
+                        </small>
+                    </a><br>
+                    <span v-for="tec in project.technologies" v-bind:key="tec">
+                        <mark class="small_text" >
+                            {{tec}}
+                        </mark>&nbsp;
+                    </span>
+                </div>
+            </details>
         </div>
     </section>
 </template>
